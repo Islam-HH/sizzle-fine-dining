@@ -11,7 +11,7 @@
     <link rel="manifest" href="assets/logo/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cookie&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cookie&family=Forum&family=Fredoka:wght@300..700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.13.1/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,20 +25,24 @@
 </head>
 <body>
     <header id="header" class="fixed-top d-flex  align-items-center">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-            <a href="#" class="logo me-auto me-lg-0"><img src="/assets/logo/logo.png" alt="Sizzle Fine Dining"></a>
-        </div>
-        <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul>
-                <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#aboutUs">About Us</a></li>
-                <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                <li><a class="nav-link scrollto" href="#contactUs">Contact Us</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a Table</a>
+        <section id="header_container" class="d-flex align-items-center justify-content-around">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+                <a href="#" class="logo me-auto me-lg-0"><img src="assets/logo/logo.png" alt="Sizzle Fine Dining"></a>
+            </div>
+            <nav id="navbar" class="container-fluid navbar order-last order-lg-0 justify-content-center">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#aboutUs">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link scrollto" href="#contactUs">Contact Us</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <div class="container-fluid d-flex justify-content-end">
+                <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex justify-content-center">Book a Table</a>
+            </div>
+        </section>
     </header>  
     <main id="main">
         <section id="hero" class="d-flex align-items-center">
@@ -46,7 +50,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h1>Welcome to <span>Sizzle</span></h1>
-                        <h2>"Indulge in Culinary Delights: Where Every Bite is a Passport to Flavors of Amore!"</h2>
+                        <h2>Where every dish tells a story of passion, tradition, and exquisite taste.</h2>
                         <div class="btns">
                             <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
                             <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
@@ -54,6 +58,47 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+
+                    <p>About Us</p>
+
+                    <div class="row gy-4">
+
+                        <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/images/about-img-assets/about-img.png);" data-aos="fade-up" data-aos-delay="150">
+                            
+                            <div class="call-us position-absolute">
+
+                                <h2>About Restaurant</h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-5 d-flex align-items-center jsu" data-aos="fade-up" data-aos-delay="300" style="background-color: #cda45e; color: white;">
+                            
+                            <div class="content ps-0">
+
+                                <p style="font-size: 18px; padding: 10px; color: white; font-weight: 500;">
+
+                                    At Sizzle, we believe that fine dining is an art form. Our chefs combine fresh, locally sourced ingredients with culinary expertise to create dishes that delight the senses. Whether you are celebrating a special occasion or simply enjoying a night out, our elegant atmosphere and attentive service ensure a memorable experience.
+                                
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
     </main>  
 </body>

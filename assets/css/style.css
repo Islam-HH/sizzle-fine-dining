@@ -713,7 +713,7 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
-.menu #menu-flters {
+.menu #menu-filters {
   padding: 0;
   margin: 0 auto 0 auto;
   list-style: none;
@@ -721,7 +721,7 @@ section {
   border-radius: 50px;
 }
 
-.menu #menu-flters li {
+.menu #menu-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -736,13 +736,13 @@ section {
   border-radius: 50px;
 }
 
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
+.menu #menu-filters li:hover,
+.menu #menu-filters li.filter-active {
   color: #fff;
   background: #ffb03b;
 }
 
-.menu #menu-flters li:last-child {
+.menu #menu-filters li:last-child {
   margin-right: 0;
 }
 

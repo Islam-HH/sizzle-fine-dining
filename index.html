@@ -564,7 +564,72 @@
                 </div>
 
                 <form class="php-email-form" role="form">
+                    
+                    <div class="row">
 
+                        <div class="col-lg-4 col-md-6 form-group">
+
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter a Valid Name" required>
+                            
+                            <div class="validate"></div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a Valid E-mail" required>
+                            
+                            <div class="validate"></div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+
+                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number" data-rule="minlen:11" data-msg="Phone number NOT valid" required>
+                            
+                            <div class="validate"></div>
+
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+
+                            <input type="date" name="date" class="form-control" id="date" placeholder="Choose preferred Date" data-rule="minlen:6" data-msg="Please choose Valid Date" required>
+                            
+                            <div class="validate"></div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+
+                            <input type="time" name="time" class="form-control" id="time" required>
+                            
+                            <small class="form-text text-muted">Please enter the time of your visit.</small>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+
+                            <input type="number" name="people" class="form-control" id="people" placeholder="No. of Visitors" data-rule="minlen:1" data-msg="Please enter at least 1 number" required>
+                            
+                            <div class="validate"></div>
+
+                        </div>
+
+                        <div class="form-group mt-3">
+
+                            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Enter your Message"></textarea>
+
+                            <div class="validate"></div>
+
+                        </div>
+
+                        <div class="text-center">
+
+                            <button type="submit" onclick="showAlert('Your Reservation has been successfully booked!')">Confirm Your Booking</button>
+
+                        </div>
+
+                    </div>
                     
 
                 </form>

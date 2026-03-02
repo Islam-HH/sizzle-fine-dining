@@ -7,6 +7,14 @@ body {
   /* color: #fff; */
 }
 
+.sizzle {
+  color: #FFBF8A;
+  font-family: "Cookie", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
 a {
   color: #FFBF8A;
   text-decoration: none;
@@ -121,7 +129,7 @@ h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 1);
   border-bottom: 1px solid #37332a;
 }
 
@@ -379,14 +387,6 @@ h6 {
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-}
-
-#hero h1 span {
-  color: #FFBF8A;
-  font-family: "Cookie", cursive;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.5em;
 }
 
 #hero h2 {
@@ -752,6 +752,9 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .menu .menu-content::after {
@@ -761,7 +764,6 @@ section {
   top: -4px;
   z-index: 1;
   color: #dad8d4;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .menu .menu-content a {
@@ -778,13 +780,15 @@ section {
   position: relative;
   z-index: 3;
   padding: 0 10px;
-  font-weight: 600;
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .menu .menu-ingredients {
   font-style: italic;
   font-size: 14px;
-  font-family: "Comic Neue", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #969592;
 }
 

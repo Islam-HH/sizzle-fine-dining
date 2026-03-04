@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.13.1/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
-    <script src="assets/vendor/jQuery/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="assets/vendor/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    
     
 
 
@@ -569,7 +566,7 @@
 
                         <div class="col-lg-4 col-md-6 form-group">
 
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter a Valid Name" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter a Valid Name" required autocomplete="name">
                             
                             <div class="validate"></div>
 
@@ -577,7 +574,7 @@
 
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
 
-                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a Valid E-mail" required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a Valid E-mail" required autocomplete="email">
                             
                             <div class="validate"></div>
 
@@ -585,7 +582,7 @@
 
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
 
-                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number" data-rule="minlen:11" data-msg="Phone number NOT valid" required>
+                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number" data-rule="minlen:11" data-msg="Phone number NOT valid" required autocomplete="tel-country-code">
                             
                             <div class="validate"></div>
 
@@ -777,7 +774,11 @@
             </div>
 
         </section>
-    </main>  
-
+    </main>
+      
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="assets/vendor/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

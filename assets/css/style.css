@@ -156,6 +156,7 @@ h6 {
   width: 80%;
   margin: 0px auto;
   padding: 0px;
+  overflow: visible;
 }
 
 /*--------------------------------------------------------------
@@ -260,40 +261,60 @@ h6 {
   }
 
   #header_container{
-  width: 100%;
+    width: 90%;
+    position: relative;
+    justify-content: flex-start !important;
   } 
+
+  #navbar {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+  #header_logo{
+    padding: 0px;
+  }
 }
 
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
+#navbar.navbar-mobile {
+  position: absolute;
+  overflow: visible;
   top: 0;
-  right: 0;
-  left: 0;
+  right: 15px;
+  left: auto;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: none;
   transition: 0.3s;
   z-index: 999;
+  width: auto;
+  height: 100%;
 }
 
 .navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  position: static;
+  color: #cda45e;
 }
 
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 100%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: fit-content;
+  min-width: 200px;
   padding: 10px 0;
   border-radius: 6px;
-  background-color: #000000;
-  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: visible;
   transition: 0.3s;
+  height: fit-content;
+  border: 1px solid #37332a;
 }
 
 .navbar-mobile a,
@@ -301,12 +322,14 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #fff;
+  justify-content: center;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #cda45e;
+  background-color: rgba(205, 164, 94, 0.1);
 }
 
 .navbar-mobile .getstarted,

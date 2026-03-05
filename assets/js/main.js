@@ -117,6 +117,23 @@
   })
 
   /**
+  * Closes the mobile nav when a user clicks outside of it
+   */
+  document.addEventListener('click', function(e) {
+    const navbar = select('#navbar');
+    const toggle = select('.mobile-nav-toggle');
+
+    if (navbar && navbar.classList.contains('navbar-mobile')) {
+      // Check if the click is outside the navbar
+      if (!navbar.contains(e.target)) {
+        navbar.classList.remove('navbar-mobile');
+        toggle.classList.toggle('bi-list');
+        toggle.classList.toggle('bi-x');
+      }
+    }
+  });
+
+  /**
    * Mobile nav dropdowns activate
    */
   on('click', '.navbar .dropdown > a', function(e) {

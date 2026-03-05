@@ -28,7 +28,7 @@
 
             <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
                 
-                <a href="#" class="logo me-auto me-lg-0"><img src="assets/logo/logo.png" alt="Sizzle Fine Dining"></a>
+                <a href="#hero" class="logo me-auto me-lg-0"><img src="assets/logo/logo.png" alt="Sizzle Fine Dining"></a>
             
             </div>
 
@@ -184,7 +184,7 @@
 
         <section id="menu" class="menu">
 
-            <div class="container">
+            <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
 
@@ -194,181 +194,347 @@
 
                 </div>
 
+            
+
                 <div class="container mt-5">
 
                     <ul class="nav nav-tabs custom-tabs flex-column flex-sm-row justify-content-center" id="galleryTabs" role="tablist">
 
                         <li class="nav-item">
 
-                            <a href="#all" class="nav-link active" id="all-tab" data-toggle="tab" role="tab" aria-controls="all" aria-selected="true">Show All</a>
+                            <a href="#all" class="nav-link active" id="all-tab" data-bs-toggle="tab" role="tab" aria-controls="all" aria-selected="true">Show All</a>
 
                         </li>
 
                         <li class="nav-item">
 
-                            <a href="#beverages" class="nav-link" id="beverages-tab" data-toggle="tab" role="tab" aria-controls="beverages" aria-selected="false">Beverages</a>
+                            <a href="#beverages" class="nav-link" id="beverages-tab" data-bs-toggle="tab" role="tab" aria-controls="beverages" aria-selected="false">Beverages</a>
 
                         </li>
 
                         <li class="nav-item">
 
-                            <a href="#lunch" class="nav-link" id="lunch-tab" data-toggle="tab" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+                            <a href="#lunch" class="nav-link" id="lunch-tab" data-bs-toggle="tab" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
 
                         </li>
 
                         <li class="nav-item">
 
-                            <a href="#dinner" class="nav-link" id="dinner-tab" data-toggle="tab" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
+                            <a href="#dinner" class="nav-link" id="dinner-tab" data-bs-toggle="tab" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
 
                         </li>
 
                     </ul>
 
-                </div>
+                    <div class="tab-content mt-3" id="galleryTabContent">
 
-                <div class="tab-content mt-3" id="galleryTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
 
-                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="row">
+                            
+                                <div class="col-lg-6 menu-item filter-all">
 
-                        <div class="row">
-                        
-                            <div class="col-lg-6 menu-item">
+                                    <div class="menu-content">
 
-                                <div class="menu-content">
+                                        <a href="#">Classic Lemonade</a><span>$3.50</span>
 
-                                    <a href="#">Classic Lemonade</a><span>$3.50</span>
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Freshly squeezed lemons with a hint of sweetness.
+
+                                    </div>
 
                                 </div>
 
-                                <div class="menu-ingredients">
+                                <div class="col-lg-6 menu-item filter-all">
 
-                                    Freshly squeezed lemons with a hint of sweetness.
+                                    <div class="menu-content">
+
+                                        <a href="#">Sparkling Water</a><span>$2.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Refreshing carbonated water with a slice of lime.
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">House Red Wine</a><span>$8.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        A rich and bold blend, perfect for pairing with red meats.
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Grilled Chicken Salad</a><span>$12.00</span>
+                                        
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Mixed greens, grilled chicken breast, cherry tomatoes, vinaigrette.
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Beef Burger</a><span>$14.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Angus beef patty, cheddar cheese, lettuce, tomato, brioche bun.
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Vegetable Pasta</a><span>$11.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Penne pasta, seasonal vegetables, garlic olive oil sauce.
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Steak Frites</a><span>$25.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Grilled sirloin steak, herb butter, crispy french fries.
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Salmon Fillet</a><span>$22.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Pan-seared salmon, asparagus, lemon dill sauce.
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 menu-item filter-all">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Lobster Risotto</a><span>$28.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Creamy arborio rice, fresh lobster chunks, parmesan cheese.
+
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-6 menu-item">
+                        </div>
 
-                                <div class="menu-content">
+                        <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
+                            <div class="row">
 
-                                    <a href="#">Sparkling Water</a><span>$2.00</span>
+                                <div class="col-lg-6 menu-item filter-beverages">
 
-                                </div>
+                                    <div class="menu-content">
 
-                                <div class="menu-ingredients">
+                                        <a href="#">Classic Lemonade</a><span>$3.50</span>
 
-                                    Refreshing carbonated water with a slice of lime.
+                                    </div>
 
-                                </div>
+                                    <div class="menu-ingredients">
 
-                            </div>
+                                        Freshly squeezed lemons with a hint of sweetness.
 
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">House Red Wine</a><span>$8.00</span>
+                                    </div>
 
                                 </div>
+                                <div class="col-lg-6 menu-item filter-beverages">
 
-                                <div class="menu-ingredients">
+                                    <div class="menu-content">
 
-                                    A rich and bold blend, perfect for pairing with red meats.
+                                        <a href="#">Sparkling Water</a><span>$2.00</span>
 
-                                </div>
+                                    </div>
 
-                            </div>
+                                    <div class="menu-ingredients">
 
-                            <div class="col-lg-6 menu-item">
+                                        Refreshing carbonated water with a slice of lime.
 
-                                <div class="menu-content">
-
-                                    <a href="#">Grilled Chicken Salad</a><span>$12.00</span>
-                                    
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Mixed greens, grilled chicken breast, cherry tomatoes, vinaigrette.
+                                    </div>
 
                                 </div>
+                                <div class="col-lg-6 menu-item filter-beverages">
 
-                            </div>
+                                    <div class="menu-content">
 
-                            <div class="col-lg-6 menu-item">
+                                        <a href="#">House Red Wine</a><span>$8.00</span>
 
-                                <div class="menu-content">
+                                    </div>
 
-                                    <a href="#">Beef Burger</a><span>$14.00</span>
+                                    <div class="menu-ingredients">
 
-                                </div>
+                                        A rich and bold blend, perfect for pairing with red meats.
 
-                                <div class="menu-ingredients">
-
-                                    Angus beef patty, cheddar cheese, lettuce, tomato, brioche bun.
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-6 menu-item">
+                        </div>
 
-                                <div class="menu-content">
+                        <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
 
-                                    <a href="#">Vegetable Pasta</a><span>$11.00</span>
+                            <div class="row">
+
+                                <div class="col-lg-6 menu-item filter-lunch">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Grilled Chicken Salad</a><span>$12.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Mixed greens, grilled chicken breast, cherry tomatoes, vinaigrette.
+
+                                    </div>
 
                                 </div>
 
-                                <div class="menu-ingredients">
+                                <div class="col-lg-6 menu-item filter-lunch">
 
-                                    Penne pasta, seasonal vegetables, garlic olive oil sauce.
+                                    <div class="menu-content">
+
+                                        <a href="#">Beef Burger</a><span>$14.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Angus beef patty, cheddar cheese, lettuce, tomato, brioche bun.
+
+                                    </div>
 
                                 </div>
+                                <div class="col-lg-6 menu-item filter-lunch">
+
+                                    <div class="menu-content">
+
+                                        <a href="#">Vegetable Pasta</a><span>$11.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Penne pasta, seasonal vegetables, garlic olive oil sauce.
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
-                            <div class="col-lg-6 menu-item">
+                        </div>
 
-                                <div class="menu-content">
+                        <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
 
-                                    <a href="#">Steak Frites</a><span>$25.00</span>
+                            <div class="row">
 
-                                </div>
+                                <div class="col-lg-6 menu-item filter-dinner">
 
-                                <div class="menu-ingredients">
+                                    <div class="menu-content">
 
-                                    Grilled sirloin steak, herb butter, crispy french fries.
+                                        <a href="#">Steak Frites</a><span>$25.00</span>
 
-                                </div>
+                                    </div>
 
-                            </div>
+                                    <div class="menu-ingredients">
 
-                            <div class="col-lg-6 menu-item">
+                                        Grilled sirloin steak, herb butter, crispy french fries.
 
-                                <div class="menu-content">
-
-                                    <a href="#">Salmon Fillet</a><span>$22.00</span>
+                                    </div>
 
                                 </div>
 
-                                <div class="menu-ingredients">
+                                <div class="col-lg-6 menu-item filter-dinner">
 
-                                    Pan-seared salmon, asparagus, lemon dill sauce.
+                                    <div class="menu-content">
+
+                                        <a href="#">Salmon Fillet</a><span>$22.00</span>
+
+                                    </div>
+
+                                    <div class="menu-ingredients">
+
+                                        Pan-seared salmon, asparagus, lemon dill sauce.
+
+                                    </div>
 
                                 </div>
-                            </div>
 
-                            <div class="col-lg-6 menu-item">
+                                <div class="col-lg-6 menu-item filter-dinner">
 
-                                <div class="menu-content">
+                                    <div class="menu-content">
 
-                                    <a href="#">Lobster Risotto</a><span>$28.00</span>
+                                        <a href="#">Lobster Risotto</a><span>$28.00</span>
 
-                                </div>
+                                    </div>
 
-                                <div class="menu-ingredients">
+                                    <div class="menu-ingredients">
 
-                                    Creamy arborio rice, fresh lobster chunks, parmesan cheese.
+                                        Creamy arborio rice, fresh lobster chunks, parmesan cheese.
+
+                                    </div>
 
                                 </div>
 
@@ -377,171 +543,7 @@
                         </div>
 
                     </div>
-
-                    <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
-                        <div class="row">
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Classic Lemonade</a><span>$3.50</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Freshly squeezed lemons with a hint of sweetness.
-
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Sparkling Water</a><span>$2.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Refreshing carbonated water with a slice of lime.
-
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">House Red Wine</a><span>$8.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    A rich and bold blend, perfect for pairing with red meats.
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
-
-                        <div class="row">
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Grilled Chicken Salad</a><span>$12.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Mixed greens, grilled chicken breast, cherry tomatoes, vinaigrette.
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Beef Burger</a><span>$14.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Angus beef patty, cheddar cheese, lettuce, tomato, brioche bun.
-
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Vegetable Pasta</a><span>$11.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Penne pasta, seasonal vegetables, garlic olive oil sauce.
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-
-                        <div class="row">
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Steak Frites</a><span>$25.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Grilled sirloin steak, herb butter, crispy french fries.
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Salmon Fillet</a><span>$22.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Pan-seared salmon, asparagus, lemon dill sauce.
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-6 menu-item">
-
-                                <div class="menu-content">
-
-                                    <a href="#">Lobster Risotto</a><span>$28.00</span>
-
-                                </div>
-
-                                <div class="menu-ingredients">
-
-                                    Creamy arborio rice, fresh lobster chunks, parmesan cheese.
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                
                 </div>
 
             </div>
@@ -653,13 +655,13 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link active" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="true">Food</a>
+                            <a class="nav-link active" id="food-tab" data-bs-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="true">Food</a>
 
                         </li>
 
                         <li class="nav-item">
 
-                            <a class="nav-link" id="ambience-tab" data-toggle="tab" href="#ambience-tab" role="tab" aria-controls="food" aria-selected="false">Ambience</a>
+                            <a class="nav-link" id="ambience-tab" data-bs-toggle="tab" href="#ambience" role="tab" aria-controls="ambience" aria-selected="false">Ambience</a>
 
                         </li>
 

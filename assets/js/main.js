@@ -37,8 +37,8 @@
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
+    let navbarlinks = select('#navbar .scrollto', true)
     let position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash || navbarlink.hash === '#') return
@@ -176,9 +176,9 @@
         layoutMode: 'fitRows'
       });
 
-      let menuFilters = select('#menu-flters li', true);
+      let menuFilters = select('#menu-filters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#menu-filters li', function(e) {
         e.preventDefault();
         menuFilters.forEach(function(el) {
           el.classList.remove('filter-active');
